@@ -21,13 +21,13 @@
                 <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
             </label>
 
-            <a class="home-link" href="#">Home</a>
+            <a class="home-link" href="#viewer-body">Home</a>
             <a href="#about">About</a>
-            <a href="#">Products</a>
-            <a href="#">Contact</a>
+            <a href="#products">Products</a>
+            <a href="#contact">Contact</a>
        </div>
     </nav>
-    <div class="viewer-body">
+    <div class="viewer-body" id="viewer-body">
         <div class="viewer-container">
             <img src="img/1.jpg" class="viewer-img">
             <img src="img/2.jpg" class="viewer-img">
@@ -37,21 +37,44 @@
     </div>
     <div id="about" class="about">
         <h3>About us</h3>
-    <p>   At Kitchen House, we believe the kitchen is the heart of the home. With a passion for craftsmanship and attention to detail, we design and build kitchens that are both beautiful and functional.
-
-        Whether you prefer modern simplicity or timeless elegance, we bring your vision to life, creating a space you'll love for years to come.
-        
-        Let us help you create the kitchen of your dreams!
+    <p>   Bij Kitchen House geloven we dat de keuken het hart van het huis is. Met een passie voor vakmanschap en oog voor detail ontwerpen en bouwen we keukens die zowel mooi als functioneel zijn. Of je nu de voorkeur geeft aan moderne eenvoud of tijdloze elegantie, wij brengen jouw visie tot leven en creëren een ruimte waar je jarenlang van zult houden. Laat ons je helpen de keuken van je dromen te creëren!
     </p>
     </div>
+    <section class="image-gallery" id="products">
+        <div class="gallery-item">
+            <img src="img/Fronten.jpg">
+            <div class="gallery-title">Fronten</div>
+        </div>
+        <div class="gallery-item">
+            <img src="img/kranen.png" >
+            <div class="gallery-title">Kranen</div>
+        </div>
+        <div class="gallery-item">
+            <img src="img/spoil.webp">
+            <div class="gallery-title">Spoelbakken</div>
+        </div>
+        <div class="gallery-item">
+            <img src="img/light.jpg">
+            <div class="gallery-title">Keukenverlichting</div>
+        </div>
+        <div class="gallery-item">
+            <img src="img/dekton-kitchen-kreta.webp">
+            <div class="gallery-title">Werkbladen</div>
+        </div>
+        <div class="gallery-item">
+            <img src="img/knob.webp">
+            <div class="gallery-title">Knoppen & handgrepen</div>
+        </div>
+    </section>
     
     
-    <section class="footer">
+    
+    <section class="footer" id="contact">
         <div class="social">
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-tiktok"></i></a>
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a target="_blank" href="#"><i class="fab fa-instagram"></i></a>
+            <a target="_blank" href="#"><i class="fab fa-tiktok"></i></a>
+            <a target="_blank" href="#"><i class="fab fa-facebook-f"></i></a>
+            <a target="_blank" href="https://wa.link/q228yq"><i class="fab fa-whatsapp"></i></a>
         </div>
         <ul class="list">
             <li>
@@ -72,5 +95,21 @@
         </ul>
         
     </section>
+    <script>
+        // Select all navigation links
+        const navLinks = document.querySelectorAll('.links-container a');
+    
+        // Get the sidebar checkbox
+        const sidebarCheckbox = document.getElementById('sidebar-active');
+    
+        // Add event listener to each link
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                // Uncheck the checkbox to close the menu
+                sidebarCheckbox.checked = false;
+            });
+        });
+    </script>
+    
 </body>
 </html>
