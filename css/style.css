@@ -28,6 +28,7 @@ nav{
     color: white;
     padding-left: 10px;
     margin-right: auto;
+    width: 200px !important;
 }
 .links-container{
     height: 100%;
