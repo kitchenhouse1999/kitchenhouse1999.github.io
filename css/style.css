@@ -24,9 +24,12 @@ nav{
     width: 100%;
     z-index: 10;
 }
+.logo{
+  padding-left: 5px;
+}
 .nav-title{
-    color: white;
-    
+    color: #7fc241;
+    padding-left: 10px;
     margin-right: auto;
     width: 200px !important;
 }
