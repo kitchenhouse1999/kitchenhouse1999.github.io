@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DK+Uloopet+Guides&display=swap');
+.space{
+  padding-top: 50px;
+}
+.img-gallery-title{
+    font-family: "Playwrite DK Uloopet Guides", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #d4af37;                          /* Goldish color */
+    font-size: 32px;                          /* Big and noticeable */                       /* Bold */
+    text-align: center;                        /* Center text */
+    margin: 0px 0px 10px 0px;  
+}
+.img-projects-title{
+    font-family: Poppins, 'Segoe UI', Tahoma, sans-serif;
+    text-align: center; 
+    font-size: 32px;  
+    margin: 10px 0px 50px 0px;              
+}
+.main-img{
+    margin-top: 50px;
+    width: 100%;
+}
+.long{
+    height: 550px !important;
+}
